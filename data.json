@@ -1,0 +1,32 @@
+{"quizlist": [
+  {
+    "question": "dcosx.png",
+    "option1": "dacosx_1.png",
+    "option2": "dacosx_2.png",
+    "option3": "dacosx_3.png"
+  },
+  {
+    "question": "theNew.png",
+    "option1": "dasinx_1.png",
+    "option2": "dasinx_2.png",
+    "option3": "dasinx_3.png"
+  },
+  {
+    "question": "dlogax.png",
+    "option1": "dalogax_1.png",
+    "option2": "dalogax_2.png",
+    "option3": "dalogax_3.png"
+  },
+  {
+    "question": "dtanx.png",
+    "option1": "datanx_1.png",
+    "option2": "datanx_2.png",
+    "option3": "datanx_3.png"
+  },
+  {
+    "question": "dax.png",
+    "option1": "daax_1.png",
+    "option2": "daax_2.png",
+    "option3": "daax_3.png"
+  }
+]}  
