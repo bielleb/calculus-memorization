@@ -1,0 +1,298 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+  background:#fcf0f0;
+  
+}
+
+img {
+    display: block;
+    margin: auto auto auto auto;
+}
+
+.logo {
+  width:1000px;
+  height: 100px;
+  text-align:center;
+  margin-right:auto;
+  margin-left:auto;
+  margin-top:0px;
+  font-family: 'Fugaz One', cursive;
+  /*text-shadow: 4px 4px  #A8e1e4;*/
+  /*font-style: italic; */
+  color: #4688A0;
+  font-size: 60px;
+}
+
+/*original title color: 356779
+4688A0*/
+
+
+/*centers game area on webpage*/
+.wrapper{
+  max-width: 1020px;
+  margin: 0 auto;
+  position: fixed;
+  z-index: -1000;
+}
+
+.sidebar {
+  width: 950px;
+  height: 50px;
+  position: relative;
+  background: #fff;
+  border-radius: 25px;
+  box-shadow: 8px 8px #d9d9d9;
+  margin: 10px auto 15px auto;
+  z-index: 0;
+  vertical-align: top;
+  font-family: "Josefin Sans", normal;
+  font-size: 30px;
+  text-shadow: 2px 2px 3px #999;
+  color:  #FDC7D5;
+}
+
+
+
+#score {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  float: left;
+  z-index: 2;
+  /*why is this background set to be red??*/
+  /*background: red;*/
+  font-family: "Josefin Sans", normal;
+  font-size: 30px;
+  text-shadow: 2px 2px 3px #999;
+  color:  #FDC7D5;
+}
+
+/*
+.game-area{
+  width: 800px;
+  height: 400px;
+  position: relative;
+  z-index: 0;
+  background: #ebf8f9;
+  border-radius: 25px;
+  box-shadow: 10px 10px #A8e1e4;
+  margin: 10px auto auto auto;
+  padding: 50px 100px 25px 50px;
+  
+}
+*/
+
+#navContent
+{ 
+  margin:auto;
+  width:1000px;
+  height: 1000px;
+  position:relative;
+  overflow:hidden;
+  
+}
+
+/*current question*/
+#game1 {
+  width: 800px;
+  height: 400px;
+  position: relative;
+  z-index: 1;
+  background: #ebf8f9;
+  border-radius: 25px;
+  box-shadow: 10px 10px #A8e1e4;
+  margin: 10px auto auto auto;
+  padding: 50px 100px 25px 50px;
+  float: left;
+}
+
+/*next question*/
+#game2 {
+  width: 800px;
+  height: 400px;
+  /*right: -1000px;*/
+  right: -950px;
+  position: absolute;
+  z-index: 1;
+  background: #ebf8f9;
+  border-radius: 25px;
+  box-shadow: 10px 10px #A8e1e4;
+  margin: 10px auto auto auto;
+  padding: 50px 100px 25px 50px;
+}
+
+.questionPix{
+  width: 300px;
+  height: 300px;
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  border-radius: 25px;
+  box-shadow: 8px 8px #d9d9d9;
+  margin: 15px;
+  /*float: left;*/
+}
+
+.answer-container{
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+}
+
+.answerPix{
+  width: 150px;
+  height: 150px;
+  position: relative;
+  left: 500px;
+  bottom: 125px;
+  z-index: 2;
+  background: #fff;
+  border-radius: 25px;
+  box-shadow: 8px 8px #d9d9d9;
+  cursor:pointer;
+  margin:auto auto auto auto;
+  /*display: inline-block;*/
+}
+
+/*when you hover over the selected answer the border will change its color*/
+.answerPix:hover
+{ 
+  /*border:#FC0 solid 5px;*/
+  border:#4688A0 solid 5px;
+}
+
+/*Correct*/
+.feedback1{
+  width: 150px;
+  height: 30px;
+  padding: 5px;
+  font-family: "Josefin Sans", normal;
+  font-size: 30px;
+  text-shadow: 2px 2px 3px #000;
+  color:  #FFF;
+  background-color: #8BD08B;
+  /*slightly darker green is #5CBE5C if you guys would prefer that
+  original was #009900  */
+  border-radius: 25px;
+  text-align: center;
+  position: absolute;
+  margin: 30px 100px 30px 30px;
+  z-index: 3;
+  top: 350px;
+}
+
+/*Incorrect*/
+.feedback2{
+  width: 150px;
+  height: 30px;
+  padding: 5px;
+  font-family: "Josefin Sans", normal;
+  font-size: 30px;
+  text-shadow: 2px 2px 3px #000;
+  color:  #FFF;
+  background-color: #CC3300;
+  /* a more pink red would be C12035 or C73649*/
+  border-radius: 25px;
+  text-align: center;
+  position: absolute;
+  margin: 30px 100px 30px 30px;
+  z-index: 3;
+  top: 350px;
+}
+  
+.questionText{
+  font-family: "Josefin Sans", normal;
+  font-size: 30px;
+  text-shadow: -1.25px 0 #666, 0 1.25px #666, 1.25px 0 #666, 0 -1.25px #666;
+  /*i added a border but if you want a shadow instead try this*/
+  /*text-shadow: 2px 2px 3px #666;*/
+  color:  #FFF;
+}
+
+/*--------------------------------------------------------------------
+ 
+misc 5 - FLOATING DECOR
+by Saturn Themes | saturnthms.tumblr.com
+ 
+© All Rights Reserved
+ 
+This work is protected under the terms of use available at
+saturnthms.tumblr.com/info/terms
+This work is also protected under copyright law.
+ 
+--------------------------------------------------------------------*/
+.obiectus-ferenti div {
+    background: url(//dl.dropbox.com/s/15riudmtxscwlck/flower.svg) no-repeat; /* replace the URL with the image you want */
+    width:10px;
+    position: relative;
+    z-index: 4;
+    height:10px; /* change the size of the objects. keep it the same value */
+}
+
+
+
+/*
+#qBox{
+  width: 200px;
+  height: 200px;
+  margin: 50px 1px 50px 10px;
+  background: white;
+  box-shadow: 10px 10px #E2E2E2;
+  border-radius: 25px;
+  font-family: "Josefin Sans", normal;
+  font-size: 30px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 300px;
+  color:  #356779;
+  clear: both;
+}
+*/
+
+/*
+#answerBox{
+  width: 500px;
+  height: 350px;
+  background: white;
+  box-shadow: 10px 10px #E2E2E2;
+  border-radius: 25px;
+  position: relative;
+  left: 250px;
+  bottom: 300px;
+  margin:50px 100px 300px 100px;
+}
+*/
+
+/*
+@media screen and (max-width:800px)
+{ #gameArea
+  { width:96%;  padding:2%;  }
+} 
+@media screen and (max-width:400px)
+{ #wordBox{ width:200px; }  
+  #inputBox{  width:200px; } 
+}
+
+input {
+  border-radius: 10px;
+  margin-top: 150px;
+  margin-left: 150px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+*/
+
+/*#fish{
+    position:fixed;
+    padding-left:500px;
+    width:100px;
+    top:0px;
+    height:100%;  
+    z-index: 1;
+} */   
